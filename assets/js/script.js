@@ -1,5 +1,6 @@
 
-let xPos, yPos, dia;
+let xPos, yPos;
+let dia = 80;
 
 //initial canvas
 function setup() {
@@ -9,9 +10,8 @@ function setup() {
 
 //continously updates canvas
 function draw() {
-  xPos = 50;
-  yPos = 100;
-  dia = 80;
+  xPos = mouseX;
+  yPos = mouseY;
   fill('lightpink');
   circle(xPos, yPos, dia);
 }
